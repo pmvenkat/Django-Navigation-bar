@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+{% extends "navbar/mainpage.html" %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+      div.d {
+        text-align: justify;
+      } 
+      </style>
+  </style>
+</head>
+<body background="{% static 'navbar/bg1.jpeg' %}">
+
+{% block extendme%}
+<br>
+<div class="container">
+  <div class="jumbotron">
+      <div class="d">
+    
+      <center><h1>Documentation</h1></center>
+      <p>
+          <h2>Why Django ?</h2>
+          With Django, you can take Web applications from concept to launch in a matter of hours. Django takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. It’s free and open source.
+      </p>
+    
+    </div>    
+</div>
+{% endblock %}
+
+</body>
+</html>
